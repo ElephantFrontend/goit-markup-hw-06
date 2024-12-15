@@ -161,11 +161,14 @@ address {
 
 .hero {
     background-color: #2E2F42;
-    padding: 188px 0;
+    padding: 72px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), image-set(
+            url('../images/hero-mob.jpg') 1x,
+            url('../images/hero-mob-@2x.jpg') 2x
+    );
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -391,8 +394,8 @@ section ul li {
     display: flex;
     align-items: center;
     flex-direction: column;
-    row-gap: 72px;
     gap: 24px;
+    row-gap: 72px;
     flex-wrap: wrap;
 }
 
@@ -788,6 +791,7 @@ section ul li {
 }
 
 /* Responsive */
+
 @media (max-width: 1158px) {
     .concept .subtitle {
         font-size: 36px;
@@ -820,6 +824,14 @@ section ul li {
 
     .menu-button {
         display: none;
+    }
+
+    .hero {
+        padding: 112px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), image-set(
+                url('../images/hero-tab.jpg') 1x,
+                url('../images/hero-tab-@2x.jpg') 2x
+        );
     }
 
     .hero-title {
@@ -888,6 +900,14 @@ section ul li {
 
     .header .container {
         max-width: 1158px;
+    }
+
+    .hero {
+        padding: 188px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), image-set(
+                url('../images/hero-desc.jpg') 1x,
+                url('../images/hero-desc-@2x.jpg') 2x
+        );
     }
 
     .contacts--list {
