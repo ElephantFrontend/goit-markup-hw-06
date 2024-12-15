@@ -33,6 +33,12 @@
                         <a class="main-navigate--link" href="#">Contacts</a>
                     </li>
                 </ul>
+
+                <button class="menu-button">
+                    <svg class="icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
             </nav>
 
             <address class="contacts">
@@ -446,7 +452,7 @@
         </div>
     </footer>
 
-    <div class="modal-wrapper">
+    <div class="modal-wrapper order-modal">
         <div class="modal">
             <button class="modal-close-button" type="button">
                 <svg class="icon" width="8" height="8">
@@ -508,8 +514,11 @@
                                 <use href="./images/icons.svg#icon-check"></use>
                             </svg>
                         </span>
-                        I accept the terms and conditions of the
-                        <a class="accept-terms-link" href="">Privacy Policy</a>
+
+                        <span>
+                            I accept the terms and conditions of the
+                            <a class="accept-terms-link" href="">Privacy Policy</a>
+                        </span>
                     </label>
                 </div>
 
@@ -517,5 +526,82 @@
             </form>
         </div>
     </div>
+
+    <div class="mobile-menu">
+        <div class="modal">
+            <button class="modal-close-button" type="button">
+                <svg class="icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+
+            <div class="mobile-menu-content">
+                <ul class="mobile-navigate--list">
+                    <li class="mobile-navigate--item">
+                        <a class="mobile-navigate--link--active mobile-navigate--link" href="#">Studio</a>
+                    </li>
+
+                    <li class="mobile-navigate--item">
+                        <a class="mobile-navigate--link" href="#">Portfolio</a>
+                    </li>
+
+                    <li class="mobile-navigate--item">
+                        <a class="mobile-navigate--link" href="#">Contacts</a>
+                    </li>
+                </ul>
+
+                <div>
+                    <address class="mobile-contacts">
+                        <ul class="mobile-contacts--list">
+                            <li class="mobile-contacts--item">
+                                <a class="mobile-contacts--link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+
+                            <li class="mobile-contacts--item">
+                                <a class="mobile-contacts--link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                            </li>
+                        </ul>
+                    </address>
+
+                    <ul class="socials-list">
+                        <li class="socials-item">
+                            <a class="socials-link" href="">
+                                <svg class="icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="socials-item">
+                            <a class="socials-link" href="">
+                                <svg class="icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="socials-item">
+                            <a class="socials-link" href="">
+                                <svg class="icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="socials-item">
+                            <a class="socials-link" href="">
+                                <svg class="icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
