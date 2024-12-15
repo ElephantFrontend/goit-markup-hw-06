@@ -237,7 +237,7 @@ section {
 
 section ul {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     flex-wrap: wrap;
     gap: 24px;
     row-gap: 72px;
@@ -841,11 +841,15 @@ section ul li {
     }
 
     .concept-item {
-        flex: 0 1 calc(50% - 18px);
+        flex: 0 1 calc(50% - 12px);
     }
 
     .concept-item .subtitle {
         text-align: start;
+    }
+
+    .team .container {
+        max-width: 584px;
     }
 
     .team-list {
@@ -853,7 +857,7 @@ section ul li {
     }
 
     .team .card {
-        flex: 0 1 calc(50% - 18px);
+        flex: 0 1 calc(50% - 12px);
     }
 
     .portfolio-list {
@@ -936,6 +940,10 @@ section ul li {
 
     .concept-img {
         display: flex;
+    }
+
+    .team .container {
+        max-width: 1158px;
     }
 
     .team .card {
